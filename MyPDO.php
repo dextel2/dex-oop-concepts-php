@@ -1,7 +1,7 @@
 <?php
     class MyPDO extends PDO
     {
-        public function __construct($dsn, $username = NULL, $password = NULL, $options = [])
+        public function __construct($dsn, $username = 'root', $password = '', $options = [])
         {
             $default_options = [
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
