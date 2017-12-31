@@ -1,5 +1,6 @@
 <?php
     include 'Student.php';
+    include 'AnotherClass.php';
 
     $mypdo = new MyPDO('mysql:host=localhost;dbname=admission2018;charset=utf8');
     $student = new Student($mypdo);
@@ -12,3 +13,6 @@
         echo "<b style='color:blue'>Email ID </b>" . $row['EMAIL'];    
         echo "<br/>";
     }
+
+    $anotherClassObject = new AnotherClass();
+    echo $anotherClassObject->OnePlusOne();
