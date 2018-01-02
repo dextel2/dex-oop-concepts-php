@@ -2,6 +2,7 @@
     include 'Student.php';
     include 'AnotherClass.php';
     include 'CarClass.php';
+    include 'StringClass.php';
 
     /*
     $mypdo = new MyPDO('mysql:host=localhost;dbname=admission2018;charset=utf8');
@@ -21,3 +22,6 @@
     
     $carClassObject = new CarClass();
     echo $carClassObject->returnString('WindowsFreak');
+
+    $anotherStringClassObject = new StringClass();
+    echo $anotherStringClassObject->RandomMethod("Windows","Freak");
